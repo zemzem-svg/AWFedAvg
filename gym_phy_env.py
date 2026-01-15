@@ -3,8 +3,6 @@ from gymnasium import spaces
 import numpy as np
 import sys
 
-# Make sure this path points to where phy_env_class.py (and Phy, std_param) live:
-sys.path.append(r"D:\karama\vs_code\VS_code Project")
 from phy_env_class import Phy, std_param
 
 
@@ -313,3 +311,4 @@ class SingleEnvPhyEnv(PhyEnv):
     def residual_urllc_pkts(self):
         """List of final residual URLLC packets (one entry per completed episode)."""
         return self._residual_urllc_pkts
+
